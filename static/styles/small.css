@@ -1,0 +1,183 @@
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.row {clear: both;}
+.limited {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
+.small-12 {width: 100%;}
+
+div {
+    background-color: #2d3132;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+    padding-left: 1em;
+    width: 90%;
+}
+
+header {
+    background-color: #1f2122;
+}
+
+header img {
+    float: left;
+    height: 85px;
+    padding-top: .5rem;
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: gold;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header h1 {
+    padding: 1.2rem 0 0 0;
+    font-size: 1.95rem;
+}
+
+header h2 {
+    padding: .2rem 0 0 0;
+    font-size: 1.05rem;
+}
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+    padding-top: .5rem;
+}
+
+nav {
+    background-color: gold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav li.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rowNav {
+    background-color: gold;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main h1, main h3 {
+    color: whitesmoke;
+    font-style: normal;
+}
+
+main h1 {font-size: 2rem;}
+main h3 {font-size: 1.2rem;}
+main p {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin: 0 0 .3rem 0;
+}
+
+.labeled {
+    position: relative;
+    background-color: #2d3132;
+}
+
+.labeled h6, .labeled p {
+    position: absolute;
+    background-color: rgba(45, 49, 50, .7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;
+}
+
+.labeled h6 {
+    top: 0;
+    color: gold;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.labeled p {
+    bottom: 0;
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: #1f2122;
+    font-size: 1.2rem;
+}
+
+footer h2 {
+    font-style: italic;
+    color: gold;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem;
+}
+
+footer ul li {
+    display: block;
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+footer ul li span {
+    display: block;
+    margin-left: -2em;
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

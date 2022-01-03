@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<title>G99 | Contact</title>
+<nav class="clear-fix">
+    <div class="row rowNav">
+        <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li class="nav-item"><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a href="{{ url_for('programs') }}">Programs</a></li>
+                <li class="nav-item active"><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+    </div>
+</nav>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+<title>G99 Solutions</title>
+<nav class="clear-fix">
+    <div class="row rowNav">
+        <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li class="nav-item active"><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('about') }}">About</a></li>
+                <li class="nav-item"><a href="{{ url_for('programs') }}">Programs</a></li>
+                <li class="nav-item"><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+    </div>
+</nav>
+<div class="row limited">
+    <section class="column small-12">
+        <img src="{{url_for('static',filename='images/hero.gif')}}" alt="Hero Image"
+        width="800" height="450">
+        <h1>Welcome to my Website!</h1>
+        <p>Hello! This is my whipped up website for me to showcase some things I have made and excercise my creativeness which often gets neglected.
+           Web developing is not my forte so sorry if it is a little rough around the edges. Long story short I am in the IT field and looking
+           to level up by making cool things with cool people. If that sounds like something you would be interested in, shoot me an email or connect 
+           with me on LinkedIn! Hopefully this is long enough for a welcome as I am not one for rambling, take a look around and enjoy! Below I have
+           listed my top 4 areas of interest in the IT field.
+        </p>
+    </section>
+</div>
+<div class="clear-fix">
+    <div class="row limited">
+        <section class="column small-12 medium-6 labeled">
+            <h6>Cyber Security</h6>
+            <img src="{{url_for('static',filename='images/cybersecurity.png')}}" alt="Cyber Security Image">
+            <p>Constantly learning new things daily, trying harder.</p>
+        </section>
+        <section class="column small-12 medium-6 labeled">
+            <h6>Programming</h6>
+            <img src="{{url_for('static',filename='images/programming.png')}}" alt="Programming Image">
+            <p>The best debugger is a good night's sleep.</p>
+        </section>
+    </div>
+    <div class="row limited">
+        <section class="column small-12 medium-6 labeled">
+            <h6>Leadership</h6>
+            <img src="{{url_for('static',filename='images/leadership.png')}}" alt="Programming Image">
+            <p>Handling interpersonal relationships judiciously and empathetically.</p>
+        </section>
+        <section class="column small-12 medium-6 labeled">
+            <h6>Business Analysis</h6>
+            <img src="{{url_for('static',filename='images/ba.png')}}" alt="Cyber Security Image">
+            <p>Identifying challenges and opportunities for growth.</p>
+        </section>
+    </div>
+    <div class="row limited">
+        <section class="column small-12">
+            <h3>Check out my stuff!</h3>
+            <p>
+                Thank you for taking the time to read through the site and check it out, be sure to check out my programming examples if you are interested.
+                If you want to contact me about anything please reach out to me <a href="{{ url_for('contact') }}">here</a>. I am always looking to network 
+                with new people and do new things! This site is by all means open source and if you want to rip something out that you found cool for your 
+                site go right ahead. You can find the repository for this website in the PersonalWebsite repository on <a href="https://github.com/Tut-k0">GitHub</a>. Cheers!
+            </p>
+        </section>
+    </div>
+</div>
+{% endblock %}

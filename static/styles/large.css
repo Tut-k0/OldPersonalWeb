@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1024px) {
+
+    .large-3 {width: 25%;}
+    .large-2 {width: 50%; text-align: center;}
+
+    .grid-item {
+        padding-left: 3em;
+        width: 90%;
+    }
+    
+    nav ul {
+        margin-left: 3.5vw;
+    }
+
+    nav li {
+        width: auto;
+    }
+
+    nav a {
+        padding: .7rem 1rem;
+    }
+
+
+} /* end of media query */

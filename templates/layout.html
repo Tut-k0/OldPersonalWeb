@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/image.svg')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/small.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/medium.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/large.css')}}">
+</head>
+<body>
+    <header class="clear-fix">
+        <div class="row">
+            <section class="column small-12">
+                <img src="{{url_for('static',filename='images/image.svg')}}" alt="G99 Solutions Logo">
+                <h1>G99 Solutions</h1>
+                <H2>Applications that 60% of the time, it works every time!</H2>
+            </section>
+        </div> <!-- end of row -->
+    </header>
+    <!-- nav was here -->
+    <main>
+        {%block content%}
+        {%endblock%}
+    </main>
+<footer class="clear-fix">
+    <div class="row limited">
+        <section class="column small-12 medium-6 large-2">           
+            <h2>Socials</h2>
+            <ul>
+                <li><span>
+                    <a href="https://github.com/Tut-k0">
+                    <img alt="GitHub" src="{{url_for('static',filename='images/github-badge.png')}}">
+                    </a></span>
+                </li>
+                <li><span>
+                    <a href="https://www.linkedin.com/in/david-chandler-1577b0218">
+                    <img alt="LinkedIn" src="{{url_for('static',filename='images/linkedin-badge.png')}}">
+                    </a></span>
+                </li>
+                <li><span>
+                    <a href="mailto:tut_k0@protonmail.com">
+                    <img alt="Protonmail" src="{{url_for('static',filename='images/proton-badge.png')}}">
+                    </a></span>
+                </li>
+            </ul>
+        </section>
+        <section class="column small-12 medium-6 large-2">
+            <h2>TryHackMe</h2>
+            <ul>
+                <script src="https://tryhackme.com/badge/77573"></script>
+            </ul>
+        </section>
+    </div>
+</footer>
+<script src="{{url_for('static', filename='js/menuToggle.js')}}"></script>
+</body>
+</html>
